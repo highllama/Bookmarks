@@ -1,0 +1,93 @@
+header {
+
+    margin-top: 2.3em;
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .burguerIcon {
+            display: none;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+
+
+
+            li {
+                padding: 0 1.8em;
+
+                a {
+                    text-decoration: none;
+                    color: var(--darkBlue);
+
+                    &:hover {
+                        color: var(--softRed);
+                    }
+                }
+            }
+
+
+            button:hover {
+                color: var(--softRed);
+                background-color: transparent;
+                font-weight: 500;
+                transition: ease all .1s;
+                border: 2px solid var(--softRed);
+            }
+        }
+    }
+
+
+}
+
+
+@media screen and (max-width:765px) {
+
+    header {
+
+        nav {
+
+            .displayed {
+                position: fixed;
+                top: 1000px;
+                left: 0;
+                width: 100vw;
+                background-color: red;
+            }
+
+            .burguerIcon {
+                display: flex;
+                position: relative;
+                border: none;
+                background-color: transparent;
+
+            }
+
+            ul {
+                text-align: center;
+                padding-top: 5em;
+                top: -1000px;
+                position: absolute;
+                width: 100%;
+                display: block;
+                background-color: rgba(37, 43, 70, 0.9);
+                height: 100vh;
+                font-size: 1.5em;
+
+                li {
+
+                    padding: 1em;
+
+                    a {
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+    }
+}

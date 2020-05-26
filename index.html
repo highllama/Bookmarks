@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmarks</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="./src/styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- ------------------------HEADER--------------------------- -->
+    <header>
+      <nav class="container">
+        <div>
+          <img src="./src/imgs/logo-bookmark.svg" alt="logo" />
+        </div>
+        <div></div>
+        <div class="headerList">
+          <ul>
+            <li><a href="#">FEATURES</a></li>
+            <li><a href="#">PRICING</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><button class="button">LOGIN</button></li>
+          </ul>
+        </div>
+        <button class="burguerIcon">
+          <img
+            id="mobileIcon"
+            src="./src/imgs/icon-hamburger.svg"
+            alt="icon-hamburger"
+          />
+        </button>
+      </nav>
+    </header>
+
+    <!-- ---------------------------HERO------------------------------ -->
+
+    <main>
+      <div class="container">
+        <div class="hero">
+          <div class="heroInfo">
+            <h1 class="rubik500 blueText">
+              A Simple Bookmark Manager
+            </h1>
+            <p class="ligthText">
+              A clean and simple interface to organize your favourite websites.
+              Open a new browser tab and see your sites load instantly. Try it
+              for free.
+            </p>
+            <button id="buttonChrome" class="button">Get it on Chrome</button>
+            <button id="buttonFirefox" class="button">Get it on Firefox</button>
+          </div>
+
+          <div class="heroImage">
+            <img
+              src="./src/imgs/illustration-hero.svg"
+              alt="illustration-hero"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- -----------------------------FEATURES----------------------- -->
+
+    <section>
+      <div class="featuresTitle">
+        <h2 class="rubik500 blueText">Features</h2>
+        <p class="ligthText">
+          Our aim is to make it quick and easy for you to access your favourite
+          websites. Your bookmarks sync between your devices so you can access
+          them on the go.
+        </p>
+      </div>
+
+      <div class="featuresContainer">
+        <div class="featuresButtons">
+          <button class="activeFeature">Simple Bookmarking</button>
+          <button>Speedy Searching</button>
+          <button>Easy Sharing</button>
+        </div>
+
+        <div class="featuresCarousel">
+          <div class="featureTag">
+            <div class="featureImage">
+              <img
+                src="./src/imgs/illustration-features-tab-1.svg"
+                alt="illustration-features-tab-1"
+              />
+            </div>
+            <div class="featureInfo">
+              <h2 class="blueText rubik500">Bookmark in one click</h2>
+              <p class="ligthText">
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
+              </p>
+              <button class="button">More info</button>
+            </div>
+          </div>
+
+          <div class="featureTag">
+            <div class="featureImage">
+              <img
+                src="./src/imgs/illustration-features-tab-2.svg"
+                alt="illustration-features-tab-1"
+              />
+            </div>
+            <div class="featureInfo">
+              <h2 class="blueText rubik500">Intelligent search</h2>
+              <p class="ligthText">
+                Our powerful search feature will help you find saved sites in no
+                time at all. No need to trawl through all of your bookmarks.
+              </p>
+              <button class="button">More info</button>
+            </div>
+          </div>
+
+          <div class="featureTag">
+            <div class="featureImage">
+              <img
+                src="./src/imgs/illustration-features-tab-3.svg"
+                alt="illustration-features-tab-1"
+              />
+            </div>
+            <div class="featureInfo">
+              <h2 class="blueText rubik500">Share your bookmarks</h2>
+              <p class="ligthText">
+                Easily share your bookmarks and collections with others. Create
+                a shareable link that you can send at the click of a button.
+              </p>
+              <button class="button">More info</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------BROWSERS------------------------------- -->
+
+    <div class="featuresTitle">
+      <h2 class="rubik500 blueText">Download the extension</h2>
+      <p class="ligthText">
+        We’ve got more browsers in the pipeline. Please do let us know if you’ve
+        got a favourite you’d like us to prioritize.
+      </p>
+    </div>
+
+    <section>
+      <div class="browsersIcon container">
+        <div class="browser">
+          <img src="./src/imgs/logo-chrome.svg" alt="logo-chrome" />
+          <h3 class="rubik500 blueText">Add to Chrome</h3>
+          <p class="ligthText">Minimum version 62</p>
+          <button class="button">Add & Install Extension</button>
+        </div>
+
+        <div class="browser firefox">
+          <img src="./src/imgs/logo-firefox.svg" alt="logo-chrome" />
+          <h3 class="rubik500 blueText">Add to Chrome</h3>
+          <p class="ligthText">Minimum version 55</p>
+          <button class="button">Add & Install Extension</button>
+        </div>
+
+        <div class="browser opera">
+          <img src="./src/imgs/logo-opera.svg" alt="logo-chrome" />
+          <h3 class="rubik500 blueText">Add to Chrome</h3>
+          <p class="ligthText">Minimum version 46</p>
+          <button class="button">Add & Install Extension</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------QUESTIONS------------------------------------->
+
+    <div class="featuresTitle questionsTitle">
+      <h2 class="rubik500 blueText">
+        Frequently Asked Questions
+      </h2>
+      <p class="ligthText">
+        Here are some of our FAQs. If you have any other questions you’d like
+        answered please feel free to email us.
+      </p>
+    </div>
+
+    <section>
+      <div class="details">
+        <details open >
+          <summary>
+            What is Bookmark?
+          </summary>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+          tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis
+          quam ornare mattis.
+        </details>
+        <details>
+          <summary>
+            How can I request a new browser?
+          </summary>
+          Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+          ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros
+          aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
+          Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+          Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+        </details>
+        <details>
+          <summary>
+            Is there a mobile app?
+          </summary>
+          Sed consectetur quam id neque fermentum accumsan. Praesent luctus
+          vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula
+          quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex
+          et ultricies bibendum.
+        </details>
+        <details>
+          <summary>
+            What about other Chromium browsers?
+          </summary>
+          Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat
+          mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque
+          non ut velit.
+        </details>
+        <div class="container buttonQuestions">
+          <button class="button">More Info</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------FOOTER----------------------------------------- -->
+
+    <footer>
+      <div class="formFooter">
+        <h3>35,000+ ALREADY JOINED</h3>
+        <h2>Stay up-to-date with what we’re doing</h2>
+        <form action="#">
+          <input type="email" placeholder="Example@hotmail.com" />
+          <input type="submit" value="Contact Us" />
+        </form>
+      </div>
+      <div class="footerNav">
+        <div class="footerGrid container">
+          <div>
+            <img src="./src/imgs/logo-bookmark-white.png" alt="logo-bookmark" />
+          </div>
+          <div>
+            <ul>
+              <li>FEATURES</li>
+              <li>PRICING</li>
+              <li>CONTACT</li>
+            </ul>
+          </div>
+          <div>
+            <img src="./src/imgs/icon-facebook.svg" alt="icon-facebook" />
+            <img src="./src/imgs/icon-twitter.svg" alt="icon-twitter" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./src/JavaScript/script.js"></script>
+  </body>
+</html>

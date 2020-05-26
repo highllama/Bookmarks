@@ -1,0 +1,88 @@
+@import "header";
+@import "hero";
+@import "features";
+@import "browsers";
+@import "questions";
+@import "footer";
+@import "footerNav";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --softBlue: hsl(231, 69%, 60%);
+    --softRed: hsl(0, 94%, 66%);
+    --grayBlue: hsl(229, 8%, 60%);
+    --darkBlue: hsl(229, 31%, 21%);
+
+}
+
+
+
+body {
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    font-family: 'Rubik', sans-serif;
+    font-size: inherit;
+    padding: .8em 2.45em;
+    border: none;
+    outline: none;
+    background-color: var(--softRed);
+    border-radius: 6px;
+    color: #FFF;
+    transition: ease all .2s;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:active {
+        transform: scale(.9);
+        
+    }
+}
+
+.rubik {
+    font-family: "Rubik", sans-serif;
+
+    &500 {
+        font-weight: 500;
+    }
+
+    &400 {
+        font-weight: 400;
+    }
+}
+
+.ligthText {
+    color: var(--grayBlue);
+}
+
+.blueText {
+    color: var(--darkBlue);
+}
+
+@media screen and (max-width:375px) {
+
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+    }
+
+    body {
+        font-size: 11px;
+    }
+}

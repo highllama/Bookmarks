@@ -1,0 +1,98 @@
+main {
+
+    margin-top: 5em;
+
+
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .heroImage {
+            width: 100%;
+            padding-left: 2em;
+
+            img {
+                right: -100px;
+                position: relative;
+                width: 100%;
+            }
+        }
+
+        .heroInfo {
+            width: 60%;
+        }
+
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        p {
+            font-size: 1.15em;
+            line-height: 1.5;
+            margin-top: 1.3em;
+        }
+
+        button {
+            margin-top: 2em;
+            padding: 1em 1.5em;
+
+
+        }
+
+        #buttonChrome {
+            color: #FFF;
+            background-color: var(--softBlue);
+
+            &:hover {
+                background-color: transparent;
+                color: var(--softBlue);
+                border: 2px solid var(--softBlue);
+                font-weight: 500;
+            }
+        }
+
+        #buttonFirefox {
+            background-color: transparent;
+            color: var(--darkBlue);
+            margin-left: .5em;
+
+            &:hover {
+                background-color: transparent;
+                color: var(--darkBlue);
+                border: 2px solid var(--darkBlue);
+                font-weight: 500;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 765px) {
+    main {
+        .hero {
+            flex-direction: column-reverse;
+            text-align: center;
+
+
+
+            button {
+                padding: 1.5em 1.7em;
+            }
+
+            .heroImage {
+
+                img {
+                    position: initial;
+                }
+            }
+
+            .heroInfo {
+                margin-top: 5em;
+                width: 85%;
+            }
+        }
+    }
+
+}
